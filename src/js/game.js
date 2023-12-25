@@ -66,7 +66,7 @@ const checkLetter = (letter) => {
     hangmanImg.src = `images/hg-${10 - triesLeft}.png`;
 
     if (triesLeft === 0) {
-      startGame("lose");
+      stopGame("lose");
     }
   } else {
     //буква есть
